@@ -115,28 +115,33 @@
     background-size: cover;
 }
 
-.layer{
-  position: relative;
+.layer {
+    position: relative;
 }
-.layer::before{
-  content: "";
-  position: absolute;
-  width: 110%;
-  background: #E4E4E4 !important;
-  height: 80vh;
-  top: 80px;
-  transform: translate(-5%) rotate(-3deg) !important;
-  opacity: 0.1;
+
+.layer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: #E4E4E4 !important;
+    height: 90vh;
+    top: 110px;
+    transform: skewy(-3deg);
+    opacity: 0.1;
+    background-position: center;
 }
-.layer::after{
-  content: "";
-  position: absolute;
-  width: 110%;
-  background:  #282828!important;
-  height: 83vh;
-  top: 70px;
-  transform: translate(-5%) rotate(-3deg) !important;
+
+.layer::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background: #282828 !important;
+    height: 90vh;
+    top: 100px;
+    transform: skewy(-3deg);
+    background-position: center;
 }
+
 /* herons-section  */
 .get-started-btn {
     background-color: var(--fc-light-black);
@@ -145,6 +150,7 @@
     border-radius: 82px;
     border: 1px solid var(--fc-white);
     transition: all 400ms linear !important;
+  
 }
 
 .get-started-btn:hover {
@@ -306,8 +312,6 @@
     background-color: var(--fc-white);
     left: 30%;
     transform: translate(15%, 33%) rotate(-3deg);
-   
-        /* transform: rotate(18.52deg); */
 }
 
 /* footer */
