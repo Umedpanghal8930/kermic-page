@@ -110,11 +110,33 @@
 
 
 .bg-img {
-    background-image: url(../image/png.img/Homepage.png);
+    background-image: url(../image/png.img/body-image.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.layer{
+  position: relative;
+}
+.layer::before{
+  content: "";
+  position: absolute;
+  width: 110%;
+  background: #E4E4E4 !important;
+  height: 80vh;
+  top: 80px;
+  transform: translate(-5%) rotate(-3deg) !important;
+  opacity: 0.1;
+}
+.layer::after{
+  content: "";
+  position: absolute;
+  width: 110%;
+  background:  #282828!important;
+  height: 83vh;
+  top: 70px;
+  transform: translate(-5%) rotate(-3deg) !important;
+}
 /* herons-section  */
 .get-started-btn {
     background-color: var(--fc-light-black);
@@ -284,6 +306,8 @@
     background-color: var(--fc-white);
     left: 30%;
     transform: translate(15%, 33%) rotate(-3deg);
+   
+        /* transform: rotate(18.52deg); */
 }
 
 /* footer */
